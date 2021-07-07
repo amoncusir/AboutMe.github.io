@@ -1,0 +1,4 @@
+baseURL = "https://digitalpoet.info/"
+languageCode = "en-us"
+title = "About Me"
+theme = "terminal"
