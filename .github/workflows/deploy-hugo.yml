@@ -14,14 +14,20 @@ jobs:
           submodules: true
           fetch-depth: 0
 
+      - name: Read .env
+        id: env-project
+        run: |
+          . ./.env
+          echo "::set-output name=HUGO_VERSION::${HUGO_VERSION}"
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.85.0'
-          # extended: true
+          hugo-version:  '${{ steps.env-project.outputs.HUGO_VERSION }}'
+          extended: true
 
       - name: Build
-        run: hugo --minify
+        run: hugo --minify -e prod
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
