@@ -1,0 +1,16 @@
+
+showLastUpdated = false
+
+# Terminal Theme Params ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+# ["orange", "blue", "red", "green", "pink"]
+themeColor = "green"
+
+# show selector to switch language
+showLanguageSelector = false
+
+# set theme to full screen width
+fullWidthTheme = false
+
+# center theme with _default width
+centerTheme = false
