@@ -4,6 +4,7 @@ services:
   hugo:
     container_name: hugo
     image: "peaceiris/hugo:v${HUGO_VERSION}"
+    restart: always
     expose:
       - "80/tcp"
     volumes:

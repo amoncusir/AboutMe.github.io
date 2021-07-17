@@ -1,6 +1,12 @@
+# General Settings
 baseURL = "/"
-languageCode = "en-us"
 title = "Digital Poet"
 theme = "terminal"
+paginate = 10
 
+# Language Settings
+languageCode = "en"
 
+# Flags
+enableEmoji = true
+enableRobotsTXT = true

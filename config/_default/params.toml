@@ -4,7 +4,7 @@ showLastUpdated = false
 # Terminal Theme Params ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 # ["orange", "blue", "red", "green", "pink"]
-themeColor = "blue"
+themeColor = "orange"
 
 # show selector to switch language
 showLanguageSelector = false
@@ -14,3 +14,11 @@ fullWidthTheme = false
 
 # center theme with _default width
 centerTheme = false
+
+showMenuItems = 3
+
+menuMore = "Show items"
+
+[logo]
+logoText = "Digital Poet"
+logoHomeLink = "/"

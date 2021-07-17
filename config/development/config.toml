@@ -1,13 +1,2 @@
-# General Settings
-baseURL = "/"
-title = "Digital Poet"
-theme = "terminal"
-
-# Lenaguage Settings
-disableLanguages
-languageCode = "en"
-defaultContentLanguage = "en"
-
-# Flags
-enableEmoji = true
-enableRobotsTXT = true
+# Debug Settings
+log = true
