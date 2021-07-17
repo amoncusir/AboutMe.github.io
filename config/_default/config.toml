@@ -1,12 +1,16 @@
-# General Settings
+# General Settings :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 baseURL = "/"
-title = "Digital Poet"
 theme = "terminal"
 paginate = 10
 
-# Language Settings
+# Language Settings ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 languageCode = "en"
 
-# Flags
+# Flags ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 enableEmoji = true
 enableRobotsTXT = true
+
+# Labels :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+title = "Digital Poet"
+owner = "Digital Poet"
+copyright = "Aran Moncusí Ramírez"

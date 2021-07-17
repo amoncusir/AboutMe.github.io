@@ -2,3 +2,41 @@
 identifier = "about"
 name = "About Me"
 url = "/about"
+weight = 1
+
+[[main]]
+identifier = "blog"
+name = "Blog"
+url = "/blog"
+weight = 2
+
+[[main]]
+identifier = "scripts"
+name = "Scripts"
+weight = 3
+
+[[main]]
+identifier = "contact"
+name = "Contact"
+url = "mailto:aran@digitalpoet.info"
+weight = 4
+
+# Childrens for Scripts Entry ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+[[main]]
+parent = "scripts"
+identifier = "editorconfig"
+name = ".editorconfig"
+url = "/scripts/.editorconfig"
+weight = 2
+[main.params]
+    download = ".editorconfig"
+
+[[main]]
+parent = "scripts"
+identifier = "detekt"
+name = "detekt-config.yaml"
+url = "/scripts/detekt-config.yaml"
+weight = 2
+[main.params]
+    download = "detekt-config.yaml"

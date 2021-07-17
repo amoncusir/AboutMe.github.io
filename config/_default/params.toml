@@ -15,10 +15,10 @@ fullWidthTheme = false
 # center theme with _default width
 centerTheme = false
 
-showMenuItems = 3
-
+# Labels :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+keywords = "Aran Moncusí Ramírez, Developer, Devlops, Backend"
 menuMore = "Show items"
 
+# Logo Params ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 [logo]
 logoText = "Digital Poet"
-logoHomeLink = "/"
