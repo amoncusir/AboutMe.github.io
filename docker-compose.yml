@@ -15,7 +15,7 @@ services:
       - --port=80
       - --buildDrafts
       - --buildFuture
-      - --baseURL=http://${BASE_DOMAIN}/
+      - --baseURL=http://${LOCAL_DOMAIN}/
       - --appendPort=false
     networks:
       - default
@@ -23,7 +23,7 @@ services:
       - "traefik.enable=true"
       - "traefik.default.protocol=http"
       - "traefik.backend=hugo"
-      - "traefik.frontend.rule=Host:${BASE_DOMAIN}"
+      - "traefik.frontend.rule=Host:${LOCAL_DOMAIN}"
       - "traefik.port=80"
 
   traefik:

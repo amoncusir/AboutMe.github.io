@@ -7,6 +7,7 @@ on:
 
 jobs:
   deploy:
+    name: Deploy site
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
@@ -19,12 +20,19 @@ jobs:
         run: |
           . ./.env
           echo "::set-output name=HUGO_VERSION::${HUGO_VERSION}"
+          echo "::set-output name=EXTERNAL_DOMAIN::${EXTERNAL_DOMAIN}"
+          echo "::set-output name=GIT_DEPLOY_BRANCH::${GIT_DEPLOY_BRANCH}"
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version:  '${{ steps.env-project.outputs.HUGO_VERSION }}'
           extended: true
+
+      - name: Set CNAME
+        env:
+          EXTERNAL_DOMAIN: '${{ steps.env-project.outputs.EXTERNAL_DOMAIN }}'
+        run: echo $EXTERNAL_DOMAIN > ./static/CNAME
 
       - name: Build
         run: hugo --minify
@@ -34,5 +42,5 @@ jobs:
         if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: pages
+          publish_branch: ${{ steps.env-project.outputs.GIT_DEPLOY_BRANCH }}
           publish_dir: ./public
