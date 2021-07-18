@@ -5,6 +5,6 @@ draft: false
 ---
 Hi! This site is under construction!
 
-You can come back in few weeks, see you latter!
+Come back in few weeks!
 
-{{< figure src="/img/all-fine.png" alt="Myself" position="center" caption="Don't worry..." >}}
+{{< figure src="/img/all-fine.png" alt="Myself" position="center" caption="All it's fine..." >}}
