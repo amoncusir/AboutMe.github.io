@@ -2,4 +2,5 @@
 &lt;figure class="center" >
 &lt;img src="/img/me.png" alt="Myself" />
 &lt;figcaption class="center" >It's me!&lt;/figcaption>
-&lt;/figure></content></item></channel></rss>
+&lt;/figure></content></item><item><title>La Golfa</title><link>/la-golfa/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/la-golfa/</guid><description/><content>
+&lt;iframe src="https://calendar.google.com/calendar/embed?src=c_46em62a226pn0l0vnasnjq2nto%40group.calendar.google.com&amp;ctz=Europe%2FMadrid" style="border: 0" width="800" height="600" frameborder="0" scrolling="no">&lt;/iframe></content></item></channel></rss>
