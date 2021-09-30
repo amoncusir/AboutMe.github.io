@@ -16,10 +16,16 @@ name = "Scripts"
 weight = 3
 
 [[main]]
-identifier = "contact"
-name = "Contact"
-url = "mailto:aran@digitalpoet.info"
+identifier = "about"
+name = "About Me"
+url = "/about"
 weight = 4
+
+[[main]]
+identifier = "la-golfa"
+name = "La Golfa"
+url = "/la-golfa"
+weight = 5
 
 # Childrens for Scripts Entry ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
