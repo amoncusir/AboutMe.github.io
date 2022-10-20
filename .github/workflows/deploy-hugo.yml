@@ -20,8 +20,11 @@ jobs:
         run: |
           . ./.env
           echo "::set-output name=HUGO_VERSION::${HUGO_VERSION}"
+          echo "HUGO_VERSION=${HUGO_VERSION}" >> $GITHUB_OUTPUT
           echo "::set-output name=EXTERNAL_DOMAIN::${EXTERNAL_DOMAIN}"
+          echo "EXTERNAL_DOMAIN=${EXTERNAL_DOMAIN}" >> $GITHUB_OUTPUT
           echo "::set-output name=GIT_DEPLOY_BRANCH::${GIT_DEPLOY_BRANCH}"
+          echo "GIT_DEPLOY_BRANCH=${GIT_DEPLOY_BRANCH}" >> $GITHUB_OUTPUT
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
